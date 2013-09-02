@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
   response.send(text);
 });
 
-var port = process.env.PORT || 8080;
-app.listen(port, function() {
+var port = 8080;
+app.listen(port, "0.0.0.0", function() {
   console.log("Listening on " + port);
 });
